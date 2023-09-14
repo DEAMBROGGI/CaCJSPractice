@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100vw;
+    height: 60px;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+nav>div>button {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.active {
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+    padding: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+nav>a>button:hover {
+    cursor: pointer;
+    background-color: yellow;
+    color: black;
+    box-shadow: 13px 10px 29px -7px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: 13px 10px 29px -7px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 13px 10px 29px -7px rgba(0, 0, 0, 0.71);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* MENU HAMBURGUESA */
+
+.navbar {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+}
+
+#navBarsubmenu>ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100px;
+  
+    background-color: blue;
+}
+
+.showMenuResponsive {
+    display: flex !important;
+    flex-direction: column;
+}
+
+#navBarsubmenu{
+    width: 60px;
+    height: 60px;
+    min-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 10;
+}
+
+ul >li{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ul > li:hover{
+    cursor: pointer;
+    background-color: yellow;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* CSS rules to apply for screens with a width between 768px and 1024px */
+}
+
+@media screen and (min-width:501px){
+    #navBarsubmenu>ul{
+        display: none !important;
+    }
+    
+}

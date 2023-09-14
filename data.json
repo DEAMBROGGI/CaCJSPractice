@@ -1,0 +1,49 @@
+{
+    "data":[
+        {
+            "marca": "Fiat",
+            "modelo": "Siena",
+            "motor": {
+                "cilindros": 4,
+                "capacidad": 1.4,
+                "valvulas": 8
+            },
+            "automatico": false
+    
+        },
+        {
+            "marca": "Ford",
+            "modelo": "Mustang",
+            "motor": {
+                "cilindros": 8,
+                "capacidad": 5,
+                "valvulas": 32
+            },
+            "automatico": false
+    
+        },
+        {
+            "marca": "Ford",
+            "modelo": "Fiesta",
+            "motor": {
+                "cilindros": 4,
+                "capacidad": 1.2,
+                "valvulas": 8
+            },
+            "automatico": false
+    
+        },
+        {
+            "marca": "VW",
+            "modelo": "Bora",
+            "motor": {
+                "cilindros": "4",
+                "capacidad": 2,
+                "valvulas": 16
+            },
+            "automatico": false
+    
+         }
+    ]
+}
+
